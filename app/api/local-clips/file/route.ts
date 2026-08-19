@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
     }
 
     const chunk = fs.readFileSync(filePath).subarray(start, end + 1);
-    return new NextResponse(chunk, {
+    return new NextResponse(new Uint8Array(chunk), {
       status: 206,
       headers: {
         "Content-Type": contentType,
@@ -52,7 +52,7 @@ export async function GET(request: NextRequest) {
   }
 
   const data = fs.readFileSync(filePath);
-  return new NextResponse(data, {
+  return new NextResponse(new Uint8Array(data), {
     status: 200,
     headers: {
       "Content-Type": contentType,
