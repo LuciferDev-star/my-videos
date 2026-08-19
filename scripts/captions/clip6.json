@@ -1,0 +1,156 @@
+[
+  {
+    "text": "Then",
+    "startMs": 80,
+    "endMs": 1070,
+    "timestampMs": 1360,
+    "confidence": 0.878098
+  },
+  {
+    "text": " there",
+    "startMs": 1070,
+    "endMs": 1240,
+    "timestampMs": 1840,
+    "confidence": 0.546665
+  },
+  {
+    "text": " are",
+    "startMs": 1240,
+    "endMs": 1650,
+    "timestampMs": 2100,
+    "confidence": 0.997786
+  },
+  {
+    "text": " edge",
+    "startMs": 1650,
+    "endMs": 2200,
+    "timestampMs": 2380,
+    "confidence": 0.802251
+  },
+  {
+    "text": " locations",
+    "startMs": 2200,
+    "endMs": 3450,
+    "timestampMs": 3060,
+    "confidence": 0.99648
+  },
+  {
+    "text": ".",
+    "startMs": 3450,
+    "endMs": 3500,
+    "timestampMs": 4000,
+    "confidence": 0.388658
+  },
+  {
+    "text": " Small",
+    "startMs": 3500,
+    "endMs": 3980,
+    "timestampMs": 4140,
+    "confidence": 0.99827
+  },
+  {
+    "text": "er",
+    "startMs": 3980,
+    "endMs": 4140,
+    "timestampMs": 4380,
+    "confidence": 0.999706
+  },
+  {
+    "text": " sites",
+    "startMs": 4140,
+    "endMs": 4600,
+    "timestampMs": 4700,
+    "confidence": 0.994831
+  },
+  {
+    "text": " much",
+    "startMs": 4600,
+    "endMs": 4970,
+    "timestampMs": 5080,
+    "confidence": 0.660395
+  },
+  {
+    "text": " closer",
+    "startMs": 4970,
+    "endMs": 5520,
+    "timestampMs": 5500,
+    "confidence": 0.997565
+  },
+  {
+    "text": " to",
+    "startMs": 5520,
+    "endMs": 5770,
+    "timestampMs": 5780,
+    "confidence": 0.996098
+  },
+  {
+    "text": " everyday",
+    "startMs": 5770,
+    "endMs": 6780,
+    "timestampMs": 6160,
+    "confidence": 0.972746
+  },
+  {
+    "text": " users",
+    "startMs": 6780,
+    "endMs": 7440,
+    "timestampMs": 6680,
+    "confidence": 0.997337
+  },
+  {
+    "text": ".",
+    "startMs": 7440,
+    "endMs": 7840,
+    "timestampMs": 7380,
+    "confidence": 0.989891
+  },
+  {
+    "text": " [",
+    "startMs": 7840,
+    "endMs": 7990,
+    "timestampMs": 9200,
+    "confidence": 0.321379
+  },
+  {
+    "text": "M",
+    "startMs": 7990,
+    "endMs": 8140,
+    "timestampMs": 9200,
+    "confidence": 0.548329
+  },
+  {
+    "text": "US",
+    "startMs": 8140,
+    "endMs": 8440,
+    "timestampMs": 9200,
+    "confidence": 0.999699
+  },
+  {
+    "text": "IC",
+    "startMs": 8440,
+    "endMs": 8740,
+    "timestampMs": 9200,
+    "confidence": 0.999579
+  },
+  {
+    "text": " PLAY",
+    "startMs": 8740,
+    "endMs": 9350,
+    "timestampMs": 9200,
+    "confidence": 0.689783
+  },
+  {
+    "text": "ING",
+    "startMs": 9350,
+    "endMs": 9810,
+    "timestampMs": 9200,
+    "confidence": 0.996105
+  },
+  {
+    "text": "]",
+    "startMs": 9810,
+    "endMs": 10000,
+    "timestampMs": 9200,
+    "confidence": 0.999519
+  }
+]

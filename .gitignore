@@ -1,1 +1,21 @@
-﻿.env.local
+node_modules
+dist
+.DS_Store
+.env
+.env.local
+
+# Local Cursor/Remotion agent skill copies — not part of the app
+.agents/
+skills-lock.json
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Local-only test uploads (fallback clip storage when no S3 bucket is
+# configured yet - see lib/local-clips.ts)
+public/uploads
+
+# Next.js build output
+.next
+next-env.d.ts
+*.tsbuildinfo

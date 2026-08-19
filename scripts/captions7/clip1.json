@@ -1,0 +1,142 @@
+[
+  {
+    "text": "Yes",
+    "startMs": 20,
+    "endMs": 460,
+    "timestampMs": 1520,
+    "confidence": 0.957348
+  },
+  {
+    "text": ",",
+    "startMs": 460,
+    "endMs": 1220,
+    "timestampMs": 1760,
+    "confidence": 0.835257
+  },
+  {
+    "text": " you",
+    "startMs": 1220,
+    "endMs": 1240,
+    "timestampMs": 1960,
+    "confidence": 0.989223
+  },
+  {
+    "text": " can",
+    "startMs": 1240,
+    "endMs": 1830,
+    "timestampMs": 2120,
+    "confidence": 0.997813
+  },
+  {
+    "text": " learn",
+    "startMs": 1830,
+    "endMs": 2440,
+    "timestampMs": 2340,
+    "confidence": 0.984741
+  },
+  {
+    "text": " AWS",
+    "startMs": 2440,
+    "endMs": 2960,
+    "timestampMs": 2800,
+    "confidence": 0.995873
+  },
+  {
+    "text": " for",
+    "startMs": 2960,
+    "endMs": 3340,
+    "timestampMs": 3040,
+    "confidence": 0.991327
+  },
+  {
+    "text": " free",
+    "startMs": 3340,
+    "endMs": 4000,
+    "timestampMs": 3380,
+    "confidence": 0.979167
+  },
+  {
+    "text": ".",
+    "startMs": 4000,
+    "endMs": 4040,
+    "timestampMs": 4480,
+    "confidence": 0.732918
+  },
+  {
+    "text": " Here",
+    "startMs": 4040,
+    "endMs": 4450,
+    "timestampMs": 4860,
+    "confidence": 0.996208
+  },
+  {
+    "text": "'s",
+    "startMs": 4450,
+    "endMs": 4750,
+    "timestampMs": 5020,
+    "confidence": 0.977074
+  },
+  {
+    "text": " how",
+    "startMs": 4750,
+    "endMs": 4970,
+    "timestampMs": 5260,
+    "confidence": 0.997752
+  },
+  {
+    "text": ".",
+    "startMs": 4970,
+    "endMs": 5280,
+    "timestampMs": 5260,
+    "confidence": 0.910319
+  },
+  {
+    "text": " [",
+    "startMs": 5280,
+    "endMs": 5820,
+    "timestampMs": 6360,
+    "confidence": 0.459156
+  },
+  {
+    "text": "BL",
+    "startMs": 5820,
+    "endMs": 7050,
+    "timestampMs": 8220,
+    "confidence": 0.87385
+  },
+  {
+    "text": "ANK",
+    "startMs": 7050,
+    "endMs": 8820,
+    "timestampMs": 8220,
+    "confidence": 0.999928
+  },
+  {
+    "text": "_",
+    "startMs": 8820,
+    "endMs": 9410,
+    "timestampMs": 8220,
+    "confidence": 0.992299
+  },
+  {
+    "text": "AUD",
+    "startMs": 9410,
+    "endMs": 10000,
+    "timestampMs": 8220,
+    "confidence": 0.999754
+  },
+  {
+    "text": "IO",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 8220,
+    "confidence": 0.999962
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 12960,
+    "timestampMs": 8220,
+    "confidence": 0.99947
+  }
+]

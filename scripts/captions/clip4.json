@@ -1,0 +1,142 @@
+[
+  {
+    "text": "Inside",
+    "startMs": 90,
+    "endMs": 1820,
+    "timestampMs": 2140,
+    "confidence": 0.796191
+  },
+  {
+    "text": " each",
+    "startMs": 1820,
+    "endMs": 1940,
+    "timestampMs": 2540,
+    "confidence": 0.997923
+  },
+  {
+    "text": " region",
+    "startMs": 1940,
+    "endMs": 3120,
+    "timestampMs": 2940,
+    "confidence": 0.985449
+  },
+  {
+    "text": " are",
+    "startMs": 3120,
+    "endMs": 3250,
+    "timestampMs": 3340,
+    "confidence": 0.936822
+  },
+  {
+    "text": " availability",
+    "startMs": 3250,
+    "endMs": 3770,
+    "timestampMs": 3960,
+    "confidence": 0.864964
+  },
+  {
+    "text": " zones",
+    "startMs": 3770,
+    "endMs": 4000,
+    "timestampMs": 4400,
+    "confidence": 0.983126
+  },
+  {
+    "text": ",",
+    "startMs": 4000,
+    "endMs": 5080,
+    "timestampMs": 5200,
+    "confidence": 0.447047
+  },
+  {
+    "text": " separate",
+    "startMs": 5080,
+    "endMs": 5740,
+    "timestampMs": 5540,
+    "confidence": 0.788493
+  },
+  {
+    "text": ",",
+    "startMs": 5740,
+    "endMs": 5740,
+    "timestampMs": 5700,
+    "confidence": 0.382633
+  },
+  {
+    "text": " isolated",
+    "startMs": 5740,
+    "endMs": 6270,
+    "timestampMs": 6280,
+    "confidence": 0.963866
+  },
+  {
+    "text": " data",
+    "startMs": 6270,
+    "endMs": 6520,
+    "timestampMs": 6620,
+    "confidence": 0.927208
+  },
+  {
+    "text": " centers",
+    "startMs": 6520,
+    "endMs": 6990,
+    "timestampMs": 7020,
+    "confidence": 0.854546
+  },
+  {
+    "text": ".",
+    "startMs": 6990,
+    "endMs": 7320,
+    "timestampMs": 7300,
+    "confidence": 0.954341
+  },
+  {
+    "text": " [",
+    "startMs": 7320,
+    "endMs": 7930,
+    "timestampMs": 7940,
+    "confidence": 0.568692
+  },
+  {
+    "text": "BL",
+    "startMs": 7930,
+    "endMs": 9170,
+    "timestampMs": 9980,
+    "confidence": 0.810395
+  },
+  {
+    "text": "ANK",
+    "startMs": 9170,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999929
+  },
+  {
+    "text": "_",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.992447
+  },
+  {
+    "text": "AUD",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999763
+  },
+  {
+    "text": "IO",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999969
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 15340,
+    "timestampMs": 9980,
+    "confidence": 0.999407
+  }
+]

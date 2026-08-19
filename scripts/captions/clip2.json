@@ -1,0 +1,163 @@
+[
+  {
+    "text": "AWS",
+    "startMs": 40,
+    "endMs": 360,
+    "timestampMs": 1580,
+    "confidence": 0.985423
+  },
+  {
+    "text": " runs",
+    "startMs": 360,
+    "endMs": 1080,
+    "timestampMs": 1960,
+    "confidence": 0.995999
+  },
+  {
+    "text": " on",
+    "startMs": 1080,
+    "endMs": 1090,
+    "timestampMs": 2260,
+    "confidence": 0.997061
+  },
+  {
+    "text": " real",
+    "startMs": 1090,
+    "endMs": 1560,
+    "timestampMs": 2500,
+    "confidence": 0.976643
+  },
+  {
+    "text": " physical",
+    "startMs": 1560,
+    "endMs": 2520,
+    "timestampMs": 2960,
+    "confidence": 0.837933
+  },
+  {
+    "text": " data",
+    "startMs": 2520,
+    "endMs": 2990,
+    "timestampMs": 3240,
+    "confidence": 0.917214
+  },
+  {
+    "text": " centers",
+    "startMs": 2990,
+    "endMs": 3980,
+    "timestampMs": 3760,
+    "confidence": 0.938812
+  },
+  {
+    "text": ",",
+    "startMs": 3980,
+    "endMs": 4030,
+    "timestampMs": 3980,
+    "confidence": 0.169712
+  },
+  {
+    "text": " spread",
+    "startMs": 4030,
+    "endMs": 4320,
+    "timestampMs": 4280,
+    "confidence": 0.789998
+  },
+  {
+    "text": " across",
+    "startMs": 4320,
+    "endMs": 4600,
+    "timestampMs": 4600,
+    "confidence": 0.985141
+  },
+  {
+    "text": " the",
+    "startMs": 4600,
+    "endMs": 4750,
+    "timestampMs": 4820,
+    "confidence": 0.993206
+  },
+  {
+    "text": " globe",
+    "startMs": 4750,
+    "endMs": 5000,
+    "timestampMs": 5140,
+    "confidence": 0.993712
+  },
+  {
+    "text": ",",
+    "startMs": 5000,
+    "endMs": 5580,
+    "timestampMs": 5640,
+    "confidence": 0.716884
+  },
+  {
+    "text": " organized",
+    "startMs": 5580,
+    "endMs": 5990,
+    "timestampMs": 5980,
+    "confidence": 0.749221
+  },
+  {
+    "text": " into",
+    "startMs": 5990,
+    "endMs": 6530,
+    "timestampMs": 6360,
+    "confidence": 0.986122
+  },
+  {
+    "text": " three",
+    "startMs": 6530,
+    "endMs": 6760,
+    "timestampMs": 6640,
+    "confidence": 0.865281
+  },
+  {
+    "text": " layers",
+    "startMs": 6760,
+    "endMs": 7240,
+    "timestampMs": 7100,
+    "confidence": 0.99286
+  },
+  {
+    "text": ".",
+    "startMs": 7240,
+    "endMs": 7240,
+    "timestampMs": 7220,
+    "confidence": 0.907779
+  },
+  {
+    "text": " (",
+    "startMs": 7440,
+    "endMs": 7460,
+    "timestampMs": 7900,
+    "confidence": 0.591637
+  },
+  {
+    "text": "log",
+    "startMs": 7460,
+    "endMs": 8000,
+    "timestampMs": 7900,
+    "confidence": 0.0717602
+  },
+  {
+    "text": "o",
+    "startMs": 8000,
+    "endMs": 8220,
+    "timestampMs": 7900,
+    "confidence": 0.990082
+  },
+  {
+    "text": " popping",
+    "startMs": 8220,
+    "endMs": 9600,
+    "timestampMs": 7900,
+    "confidence": 0.545406
+  },
+  {
+    "text": ")",
+    "startMs": 9600,
+    "endMs": 9820,
+    "timestampMs": 7900,
+    "confidence": 0.983055
+  }
+]

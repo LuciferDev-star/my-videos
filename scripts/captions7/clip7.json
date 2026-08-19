@@ -1,0 +1,184 @@
+[
+  {
+    "text": "Next",
+    "startMs": 50,
+    "endMs": 510,
+    "timestampMs": 1980,
+    "confidence": 0.827361
+  },
+  {
+    "text": ",",
+    "startMs": 510,
+    "endMs": 760,
+    "timestampMs": 2320,
+    "confidence": 0.902734
+  },
+  {
+    "text": " we",
+    "startMs": 760,
+    "endMs": 1010,
+    "timestampMs": 2520,
+    "confidence": 0.98669
+  },
+  {
+    "text": "'re",
+    "startMs": 1010,
+    "endMs": 1650,
+    "timestampMs": 2600,
+    "confidence": 0.909459
+  },
+  {
+    "text": " creating",
+    "startMs": 1650,
+    "endMs": 2410,
+    "timestampMs": 2980,
+    "confidence": 0.997683
+  },
+  {
+    "text": " your",
+    "startMs": 2410,
+    "endMs": 2920,
+    "timestampMs": 3200,
+    "confidence": 0.990524
+  },
+  {
+    "text": " actual",
+    "startMs": 2920,
+    "endMs": 3680,
+    "timestampMs": 3700,
+    "confidence": 0.990041
+  },
+  {
+    "text": " AWS",
+    "startMs": 3680,
+    "endMs": 4040,
+    "timestampMs": 4320,
+    "confidence": 0.99543
+  },
+  {
+    "text": " account",
+    "startMs": 4040,
+    "endMs": 5160,
+    "timestampMs": 4800,
+    "confidence": 0.933104
+  },
+  {
+    "text": ",",
+    "startMs": 5160,
+    "endMs": 5220,
+    "timestampMs": 5100,
+    "confidence": 0.612881
+  },
+  {
+    "text": " step",
+    "startMs": 5220,
+    "endMs": 5490,
+    "timestampMs": 5360,
+    "confidence": 0.940083
+  },
+  {
+    "text": " by",
+    "startMs": 5490,
+    "endMs": 5640,
+    "timestampMs": 5560,
+    "confidence": 0.6378
+  },
+  {
+    "text": " step",
+    "startMs": 5640,
+    "endMs": 5980,
+    "timestampMs": 5980,
+    "confidence": 0.996945
+  },
+  {
+    "text": ".",
+    "startMs": 5980,
+    "endMs": 6000,
+    "timestampMs": 5980,
+    "confidence": 0.93592
+  },
+  {
+    "text": " (",
+    "startMs": 6000,
+    "endMs": 6220,
+    "timestampMs": 7400,
+    "confidence": 0.601992
+  },
+  {
+    "text": "bell",
+    "startMs": 6220,
+    "endMs": 7090,
+    "timestampMs": 7400,
+    "confidence": 0.0767314
+  },
+  {
+    "text": " d",
+    "startMs": 7090,
+    "endMs": 7310,
+    "timestampMs": 7400,
+    "confidence": 0.508548
+  },
+  {
+    "text": "ings",
+    "startMs": 7310,
+    "endMs": 8180,
+    "timestampMs": 7400,
+    "confidence": 0.871997
+  },
+  {
+    "text": ")",
+    "startMs": 8180,
+    "endMs": 8420,
+    "timestampMs": 7420,
+    "confidence": 0.992901
+  },
+  {
+    "text": " [",
+    "startMs": 8420,
+    "endMs": 9080,
+    "timestampMs": 9980,
+    "confidence": 0.246887
+  },
+  {
+    "text": "BL",
+    "startMs": 9080,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.432718
+  },
+  {
+    "text": "ANK",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999821
+  },
+  {
+    "text": "_",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.992939
+  },
+  {
+    "text": "AUD",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999732
+  },
+  {
+    "text": "IO",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.99995
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 16940,
+    "timestampMs": 9980,
+    "confidence": 0.999235
+  }
+]

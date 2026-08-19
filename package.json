@@ -6,26 +6,46 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-s3": "3.1109.0",
+    "@aws-sdk/s3-request-presigner": "3.1109.0",
+    "@google/genai": "2.17.1",
+    "@remotion/bundler": "4.0.504",
+    "@remotion/captions": "4.0.504",
     "@remotion/cli": "4.0.504",
+    "@remotion/install-whisper-cpp": "4.0.504",
+    "@remotion/lambda": "4.0.504",
+    "@remotion/media": "4.0.504",
+    "@remotion/renderer": "4.0.504",
+    "@remotion/player": "4.0.504",
+    "@remotion/tailwind-v4": "4.0.504",
+    "@remotion/transitions": "4.0.504",
+    "next": "16.3.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.504",
-    "@remotion/tailwind-v4": "4.0.504",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "zod": "4.4.3"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.504",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.10.5",
     "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "@types/web": "0.0.166",
     "eslint": "9.19.0",
+    "eslint-config-next": "16.3.0",
     "prettier": "3.8.1",
     "typescript": "5.9.3"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "studio": "remotion studio",
+    "remotion:bundle": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src app lib && tsc -p tsconfig.json --noEmit && tsc -p tsconfig.app.json --noEmit"
   },
   "sideEffects": [
     "*.css"

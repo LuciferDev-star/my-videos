@@ -1,0 +1,170 @@
+[
+  {
+    "text": "The",
+    "startMs": 50,
+    "endMs": 540,
+    "timestampMs": 1800,
+    "confidence": 0.758832
+  },
+  {
+    "text": " catch",
+    "startMs": 540,
+    "endMs": 1670,
+    "timestampMs": 2160,
+    "confidence": 0.98977
+  },
+  {
+    "text": "?",
+    "startMs": 1670,
+    "endMs": 2000,
+    "timestampMs": 2620,
+    "confidence": 0.774325
+  },
+  {
+    "text": " You",
+    "startMs": 2000,
+    "endMs": 2730,
+    "timestampMs": 2880,
+    "confidence": 0.827498
+  },
+  {
+    "text": " still",
+    "startMs": 2730,
+    "endMs": 2770,
+    "timestampMs": 3160,
+    "confidence": 0.994954
+  },
+  {
+    "text": " add",
+    "startMs": 2770,
+    "endMs": 3010,
+    "timestampMs": 3400,
+    "confidence": 0.986741
+  },
+  {
+    "text": " a",
+    "startMs": 3010,
+    "endMs": 3090,
+    "timestampMs": 3560,
+    "confidence": 0.988859
+  },
+  {
+    "text": " payment",
+    "startMs": 3090,
+    "endMs": 3760,
+    "timestampMs": 3780,
+    "confidence": 0.994587
+  },
+  {
+    "text": " method",
+    "startMs": 3760,
+    "endMs": 4060,
+    "timestampMs": 4240,
+    "confidence": 0.97316
+  },
+  {
+    "text": " and",
+    "startMs": 4060,
+    "endMs": 4680,
+    "timestampMs": 4700,
+    "confidence": 0.461434
+  },
+  {
+    "text": " going",
+    "startMs": 4680,
+    "endMs": 5040,
+    "timestampMs": 4940,
+    "confidence": 0.9802
+  },
+  {
+    "text": " over",
+    "startMs": 5040,
+    "endMs": 5240,
+    "timestampMs": 5240,
+    "confidence": 0.959783
+  },
+  {
+    "text": " the",
+    "startMs": 5240,
+    "endMs": 5490,
+    "timestampMs": 5440,
+    "confidence": 0.974472
+  },
+  {
+    "text": " limits",
+    "startMs": 5490,
+    "endMs": 6080,
+    "timestampMs": 5780,
+    "confidence": 0.987462
+  },
+  {
+    "text": " means",
+    "startMs": 6080,
+    "endMs": 6300,
+    "timestampMs": 6260,
+    "confidence": 0.917431
+  },
+  {
+    "text": " you",
+    "startMs": 6300,
+    "endMs": 6390,
+    "timestampMs": 6440,
+    "confidence": 0.909637
+  },
+  {
+    "text": " get",
+    "startMs": 6390,
+    "endMs": 6630,
+    "timestampMs": 6580,
+    "confidence": 0.97156
+  },
+  {
+    "text": " charged",
+    "startMs": 6630,
+    "endMs": 7200,
+    "timestampMs": 7120,
+    "confidence": 0.836392
+  },
+  {
+    "text": ".",
+    "startMs": 7200,
+    "endMs": 7240,
+    "timestampMs": 7220,
+    "confidence": 0.882137
+  },
+  {
+    "text": " (",
+    "startMs": 7240,
+    "endMs": 7440,
+    "timestampMs": 9260,
+    "confidence": 0.17331
+  },
+  {
+    "text": "gent",
+    "startMs": 7440,
+    "endMs": 8230,
+    "timestampMs": 9280,
+    "confidence": 0.0324057
+  },
+  {
+    "text": "le",
+    "startMs": 8230,
+    "endMs": 8620,
+    "timestampMs": 9280,
+    "confidence": 0.999899
+  },
+  {
+    "text": " music",
+    "startMs": 8620,
+    "endMs": 9610,
+    "timestampMs": 9280,
+    "confidence": 0.654277
+  },
+  {
+    "text": ")",
+    "startMs": 9610,
+    "endMs": 9820,
+    "timestampMs": 9300,
+    "confidence": 0.948888
+  }
+]

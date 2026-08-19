@@ -1,0 +1,149 @@
+[
+  {
+    "text": "Where",
+    "startMs": 20,
+    "endMs": 410,
+    "timestampMs": 1460,
+    "confidence": 0.838398
+  },
+  {
+    "text": " does",
+    "startMs": 410,
+    "endMs": 740,
+    "timestampMs": 1680,
+    "confidence": 0.996231
+  },
+  {
+    "text": " AWS",
+    "startMs": 740,
+    "endMs": 1280,
+    "timestampMs": 2160,
+    "confidence": 0.998098
+  },
+  {
+    "text": " actually",
+    "startMs": 1280,
+    "endMs": 1650,
+    "timestampMs": 2680,
+    "confidence": 0.981004
+  },
+  {
+    "text": " live",
+    "startMs": 1650,
+    "endMs": 2000,
+    "timestampMs": 2920,
+    "confidence": 0.994154
+  },
+  {
+    "text": " around",
+    "startMs": 2000,
+    "endMs": 2640,
+    "timestampMs": 3180,
+    "confidence": 0.984238
+  },
+  {
+    "text": " the",
+    "startMs": 2640,
+    "endMs": 2960,
+    "timestampMs": 3360,
+    "confidence": 0.996434
+  },
+  {
+    "text": " world",
+    "startMs": 2960,
+    "endMs": 3490,
+    "timestampMs": 3620,
+    "confidence": 0.992419
+  },
+  {
+    "text": "?",
+    "startMs": 3490,
+    "endMs": 3840,
+    "timestampMs": 4160,
+    "confidence": 0.980239
+  },
+  {
+    "text": " Let",
+    "startMs": 3840,
+    "endMs": 4220,
+    "timestampMs": 4380,
+    "confidence": 0.989859
+  },
+  {
+    "text": "'s",
+    "startMs": 4220,
+    "endMs": 4240,
+    "timestampMs": 4460,
+    "confidence": 0.993873
+  },
+  {
+    "text": " find",
+    "startMs": 4240,
+    "endMs": 4570,
+    "timestampMs": 4640,
+    "confidence": 0.998205
+  },
+  {
+    "text": " out",
+    "startMs": 4570,
+    "endMs": 4810,
+    "timestampMs": 5060,
+    "confidence": 0.999481
+  },
+  {
+    "text": ".",
+    "startMs": 4810,
+    "endMs": 5080,
+    "timestampMs": 5060,
+    "confidence": 0.767101
+  },
+  {
+    "text": " [",
+    "startMs": 5080,
+    "endMs": 5480,
+    "timestampMs": 6460,
+    "confidence": 0.492243
+  },
+  {
+    "text": "BL",
+    "startMs": 5480,
+    "endMs": 6280,
+    "timestampMs": 9460,
+    "confidence": 0.322103
+  },
+  {
+    "text": "ANK",
+    "startMs": 6280,
+    "endMs": 7480,
+    "timestampMs": 9460,
+    "confidence": 0.999895
+  },
+  {
+    "text": "_",
+    "startMs": 7480,
+    "endMs": 7880,
+    "timestampMs": 9460,
+    "confidence": 0.990522
+  },
+  {
+    "text": "AUD",
+    "startMs": 7880,
+    "endMs": 9080,
+    "timestampMs": 9460,
+    "confidence": 0.999679
+  },
+  {
+    "text": "IO",
+    "startMs": 9080,
+    "endMs": 9880,
+    "timestampMs": 9460,
+    "confidence": 0.999962
+  },
+  {
+    "text": "]",
+    "startMs": 9880,
+    "endMs": 10320,
+    "timestampMs": 9460,
+    "confidence": 0.998647
+  }
+]

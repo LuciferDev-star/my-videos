@@ -1,0 +1,156 @@
+[
+  {
+    "text": "Regions",
+    "startMs": 90,
+    "endMs": 930,
+    "timestampMs": 2120,
+    "confidence": 0.790764
+  },
+  {
+    "text": " are",
+    "startMs": 930,
+    "endMs": 1820,
+    "timestampMs": 2420,
+    "confidence": 0.996582
+  },
+  {
+    "text": " large",
+    "startMs": 1820,
+    "endMs": 1990,
+    "timestampMs": 2740,
+    "confidence": 0.956508
+  },
+  {
+    "text": " geographic",
+    "startMs": 1990,
+    "endMs": 3310,
+    "timestampMs": 3240,
+    "confidence": 0.972657
+  },
+  {
+    "text": " areas",
+    "startMs": 3310,
+    "endMs": 4000,
+    "timestampMs": 3820,
+    "confidence": 0.992483
+  },
+  {
+    "text": ",",
+    "startMs": 4000,
+    "endMs": 4490,
+    "timestampMs": 4560,
+    "confidence": 0.619463
+  },
+  {
+    "text": " separate",
+    "startMs": 4490,
+    "endMs": 4730,
+    "timestampMs": 4800,
+    "confidence": 0.810296
+  },
+  {
+    "text": " parts",
+    "startMs": 4730,
+    "endMs": 5000,
+    "timestampMs": 5160,
+    "confidence": 0.987911
+  },
+  {
+    "text": " of",
+    "startMs": 5000,
+    "endMs": 5150,
+    "timestampMs": 5320,
+    "confidence": 0.98568
+  },
+  {
+    "text": " the",
+    "startMs": 5150,
+    "endMs": 5330,
+    "timestampMs": 5460,
+    "confidence": 0.99293
+  },
+  {
+    "text": " world",
+    "startMs": 5330,
+    "endMs": 5680,
+    "timestampMs": 5720,
+    "confidence": 0.987082
+  },
+  {
+    "text": " where",
+    "startMs": 5680,
+    "endMs": 6250,
+    "timestampMs": 5980,
+    "confidence": 0.923712
+  },
+  {
+    "text": " AWS",
+    "startMs": 6250,
+    "endMs": 6600,
+    "timestampMs": 6560,
+    "confidence": 0.98525
+  },
+  {
+    "text": " operates",
+    "startMs": 6600,
+    "endMs": 7000,
+    "timestampMs": 7120,
+    "confidence": 0.889318
+  },
+  {
+    "text": ".",
+    "startMs": 7000,
+    "endMs": 7680,
+    "timestampMs": 7660,
+    "confidence": 0.929863
+  },
+  {
+    "text": " [",
+    "startMs": 7680,
+    "endMs": 8250,
+    "timestampMs": 9100,
+    "confidence": 0.473178
+  },
+  {
+    "text": "BL",
+    "startMs": 8250,
+    "endMs": 9430,
+    "timestampMs": 9980,
+    "confidence": 0.69731
+  },
+  {
+    "text": "ANK",
+    "startMs": 9430,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999941
+  },
+  {
+    "text": "_",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.991486
+  },
+  {
+    "text": "AUD",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.99976
+  },
+  {
+    "text": "IO",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999962
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 15340,
+    "timestampMs": 9980,
+    "confidence": 0.999338
+  }
+]

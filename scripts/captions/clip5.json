@@ -1,0 +1,198 @@
+[
+  {
+    "text": "There",
+    "startMs": 90,
+    "endMs": 500,
+    "timestampMs": 1320,
+    "confidence": 0.917732
+  },
+  {
+    "text": "'s",
+    "startMs": 500,
+    "endMs": 1210,
+    "timestampMs": 1460,
+    "confidence": 0.918976
+  },
+  {
+    "text": " usually",
+    "startMs": 1210,
+    "endMs": 1400,
+    "timestampMs": 1780,
+    "confidence": 0.998083
+  },
+  {
+    "text": " three",
+    "startMs": 1400,
+    "endMs": 2010,
+    "timestampMs": 2120,
+    "confidence": 0.964891
+  },
+  {
+    "text": " or",
+    "startMs": 2010,
+    "endMs": 2100,
+    "timestampMs": 2360,
+    "confidence": 0.993115
+  },
+  {
+    "text": " more",
+    "startMs": 2100,
+    "endMs": 2500,
+    "timestampMs": 2600,
+    "confidence": 0.992133
+  },
+  {
+    "text": " per",
+    "startMs": 2500,
+    "endMs": 2800,
+    "timestampMs": 2860,
+    "confidence": 0.995997
+  },
+  {
+    "text": " region",
+    "startMs": 2800,
+    "endMs": 3280,
+    "timestampMs": 3220,
+    "confidence": 0.986757
+  },
+  {
+    "text": ",",
+    "startMs": 3280,
+    "endMs": 3560,
+    "timestampMs": 3660,
+    "confidence": 0.58095
+  },
+  {
+    "text": " so",
+    "startMs": 3560,
+    "endMs": 3820,
+    "timestampMs": 4000,
+    "confidence": 0.997805
+  },
+  {
+    "text": " if",
+    "startMs": 3820,
+    "endMs": 4320,
+    "timestampMs": 4440,
+    "confidence": 0.967383
+  },
+  {
+    "text": " one",
+    "startMs": 4320,
+    "endMs": 4480,
+    "timestampMs": 4720,
+    "confidence": 0.999634
+  },
+  {
+    "text": " fails",
+    "startMs": 4480,
+    "endMs": 5100,
+    "timestampMs": 5180,
+    "confidence": 0.999451
+  },
+  {
+    "text": ",",
+    "startMs": 5100,
+    "endMs": 5380,
+    "timestampMs": 5500,
+    "confidence": 0.800876
+  },
+  {
+    "text": " your",
+    "startMs": 5380,
+    "endMs": 5730,
+    "timestampMs": 5620,
+    "confidence": 0.997919
+  },
+  {
+    "text": " app",
+    "startMs": 5730,
+    "endMs": 5990,
+    "timestampMs": 5840,
+    "confidence": 0.984305
+  },
+  {
+    "text": " keeps",
+    "startMs": 5990,
+    "endMs": 6430,
+    "timestampMs": 6140,
+    "confidence": 0.999573
+  },
+  {
+    "text": " running",
+    "startMs": 6430,
+    "endMs": 7030,
+    "timestampMs": 6440,
+    "confidence": 0.999805
+  },
+  {
+    "text": " on",
+    "startMs": 7030,
+    "endMs": 7060,
+    "timestampMs": 6660,
+    "confidence": 0.999817
+  },
+  {
+    "text": " another",
+    "startMs": 7060,
+    "endMs": 7810,
+    "timestampMs": 6980,
+    "confidence": 0.998913
+  },
+  {
+    "text": ".",
+    "startMs": 7810,
+    "endMs": 8120,
+    "timestampMs": 8060,
+    "confidence": 0.996645
+  },
+  {
+    "text": " [",
+    "startMs": 8120,
+    "endMs": 8890,
+    "timestampMs": 9900,
+    "confidence": 0.981804
+  },
+  {
+    "text": "BL",
+    "startMs": 8890,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.32878
+  },
+  {
+    "text": "ANK",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 1
+  },
+  {
+    "text": "_",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 1
+  },
+  {
+    "text": "AUD",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 1
+  },
+  {
+    "text": "IO",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 1
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 18120,
+    "timestampMs": 9980,
+    "confidence": 1
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "text": "It",
+    "startMs": 50,
+    "endMs": 420,
+    "timestampMs": 2980,
+    "confidence": 0.578411
+  },
+  {
+    "text": " also",
+    "startMs": 420,
+    "endMs": 1260,
+    "timestampMs": 3320,
+    "confidence": 0.976254
+  },
+  {
+    "text": " means",
+    "startMs": 1260,
+    "endMs": 2320,
+    "timestampMs": 3700,
+    "confidence": 0.997447
+  },
+  {
+    "text": " you",
+    "startMs": 2320,
+    "endMs": 2940,
+    "timestampMs": 4200,
+    "confidence": 0.749514
+  },
+  {
+    "text": " can",
+    "startMs": 2940,
+    "endMs": 3570,
+    "timestampMs": 4400,
+    "confidence": 0.995304
+  },
+  {
+    "text": " build",
+    "startMs": 3570,
+    "endMs": 4720,
+    "timestampMs": 4620,
+    "confidence": 0.988789
+  },
+  {
+    "text": " something",
+    "startMs": 4720,
+    "endMs": 5000,
+    "timestampMs": 5020,
+    "confidence": 0.953986
+  },
+  {
+    "text": " that",
+    "startMs": 5000,
+    "endMs": 5340,
+    "timestampMs": 5280,
+    "confidence": 0.966608
+  },
+  {
+    "text": " survives",
+    "startMs": 5340,
+    "endMs": 5910,
+    "timestampMs": 5700,
+    "confidence": 0.990191
+  },
+  {
+    "text": " out",
+    "startMs": 5910,
+    "endMs": 6130,
+    "timestampMs": 5980,
+    "confidence": 0.976233
+  },
+  {
+    "text": "ages",
+    "startMs": 6130,
+    "endMs": 6460,
+    "timestampMs": 6340,
+    "confidence": 0.996069
+  },
+  {
+    "text": ".",
+    "startMs": 6460,
+    "endMs": 6600,
+    "timestampMs": 6580,
+    "confidence": 0.91817
+  },
+  {
+    "text": " [",
+    "startMs": 6600,
+    "endMs": 6840,
+    "timestampMs": 8340,
+    "confidence": 0.393507
+  },
+  {
+    "text": "M",
+    "startMs": 6840,
+    "endMs": 7070,
+    "timestampMs": 8340,
+    "confidence": 0.425853
+  },
+  {
+    "text": "US",
+    "startMs": 7070,
+    "endMs": 7540,
+    "timestampMs": 8340,
+    "confidence": 0.999664
+  },
+  {
+    "text": "IC",
+    "startMs": 7540,
+    "endMs": 8010,
+    "timestampMs": 8340,
+    "confidence": 0.999809
+  },
+  {
+    "text": " PLAY",
+    "startMs": 8010,
+    "endMs": 8960,
+    "timestampMs": 8340,
+    "confidence": 0.621244
+  },
+  {
+    "text": "ING",
+    "startMs": 8960,
+    "endMs": 9680,
+    "timestampMs": 8340,
+    "confidence": 0.995657
+  },
+  {
+    "text": "]",
+    "startMs": 9680,
+    "endMs": 9960,
+    "timestampMs": 8340,
+    "confidence": 0.999434
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "text": "There",
+    "startMs": 20,
+    "endMs": 500,
+    "timestampMs": 620,
+    "confidence": 0.947851
+  },
+  {
+    "text": " are",
+    "startMs": 500,
+    "endMs": 670,
+    "timestampMs": 820,
+    "confidence": 0.997512
+  },
+  {
+    "text": " three",
+    "startMs": 670,
+    "endMs": 1110,
+    "timestampMs": 1020,
+    "confidence": 0.936461
+  },
+  {
+    "text": " types",
+    "startMs": 1110,
+    "endMs": 1660,
+    "timestampMs": 1400,
+    "confidence": 0.997847
+  },
+  {
+    "text": " of",
+    "startMs": 1660,
+    "endMs": 1680,
+    "timestampMs": 1620,
+    "confidence": 0.998571
+  },
+  {
+    "text": " free",
+    "startMs": 1680,
+    "endMs": 2020,
+    "timestampMs": 1800,
+    "confidence": 0.97086
+  },
+  {
+    "text": " usage",
+    "startMs": 2020,
+    "endMs": 2440,
+    "timestampMs": 2280,
+    "confidence": 0.987837
+  },
+  {
+    "text": ".",
+    "startMs": 2440,
+    "endMs": 2720,
+    "timestampMs": 3040,
+    "confidence": 0.564998
+  },
+  {
+    "text": " Always",
+    "startMs": 2720,
+    "endMs": 3340,
+    "timestampMs": 3380,
+    "confidence": 0.992358
+  },
+  {
+    "text": " free",
+    "startMs": 3340,
+    "endMs": 3750,
+    "timestampMs": 3640,
+    "confidence": 0.814329
+  },
+  {
+    "text": " services",
+    "startMs": 3750,
+    "endMs": 4340,
+    "timestampMs": 4240,
+    "confidence": 0.9953
+  },
+  {
+    "text": ",",
+    "startMs": 4340,
+    "endMs": 5200,
+    "timestampMs": 4820,
+    "confidence": 0.534318
+  },
+  {
+    "text": " like",
+    "startMs": 5200,
+    "endMs": 5420,
+    "timestampMs": 5360,
+    "confidence": 0.832852
+  },
+  {
+    "text": " a",
+    "startMs": 5420,
+    "endMs": 5470,
+    "timestampMs": 5500,
+    "confidence": 0.918503
+  },
+  {
+    "text": " bit",
+    "startMs": 5470,
+    "endMs": 5640,
+    "timestampMs": 5640,
+    "confidence": 0.994232
+  },
+  {
+    "text": " of",
+    "startMs": 5640,
+    "endMs": 5790,
+    "timestampMs": 5840,
+    "confidence": 0.926938
+  },
+  {
+    "text": " Dynamo",
+    "startMs": 5790,
+    "endMs": 6470,
+    "timestampMs": 6160,
+    "confidence": 0.574951
+  },
+  {
+    "text": "DB",
+    "startMs": 6470,
+    "endMs": 6730,
+    "timestampMs": 6460,
+    "confidence": 0.961866
+  },
+  {
+    "text": " or",
+    "startMs": 6730,
+    "endMs": 6910,
+    "timestampMs": 6880,
+    "confidence": 0.911626
+  },
+  {
+    "text": " Lamb",
+    "startMs": 6910,
+    "endMs": 7330,
+    "timestampMs": 7140,
+    "confidence": 0.965126
+  },
+  {
+    "text": "da",
+    "startMs": 7330,
+    "endMs": 7690,
+    "timestampMs": 7380,
+    "confidence": 0.996381
+  },
+  {
+    "text": " that",
+    "startMs": 7690,
+    "endMs": 7850,
+    "timestampMs": 7840,
+    "confidence": 0.630685
+  },
+  {
+    "text": " never",
+    "startMs": 7850,
+    "endMs": 8150,
+    "timestampMs": 8180,
+    "confidence": 0.998178
+  },
+  {
+    "text": " expire",
+    "startMs": 8150,
+    "endMs": 8550,
+    "timestampMs": 8700,
+    "confidence": 0.99635
+  },
+  {
+    "text": ".",
+    "startMs": 8550,
+    "endMs": 8760,
+    "timestampMs": 8740,
+    "confidence": 0.990868
+  },
+  {
+    "text": " [",
+    "startMs": 8760,
+    "endMs": 9370,
+    "timestampMs": 9420,
+    "confidence": 0.414573
+  },
+  {
+    "text": "BL",
+    "startMs": 9370,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.913078
+  },
+  {
+    "text": "ANK",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999825
+  },
+  {
+    "text": "_",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.99433
+  },
+  {
+    "text": "AUD",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999636
+  },
+  {
+    "text": "IO",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9980,
+    "confidence": 0.999971
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 16800,
+    "timestampMs": 9980,
+    "confidence": 0.999579
+  }
+]

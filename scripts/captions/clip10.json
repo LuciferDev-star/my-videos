@@ -1,0 +1,163 @@
+[
+  {
+    "text": "Cho",
+    "startMs": 140,
+    "endMs": 400,
+    "timestampMs": 1720,
+    "confidence": 0.554726
+  },
+  {
+    "text": "osing",
+    "startMs": 400,
+    "endMs": 1080,
+    "timestampMs": 1880,
+    "confidence": 0.999561
+  },
+  {
+    "text": " the",
+    "startMs": 1080,
+    "endMs": 1570,
+    "timestampMs": 2120,
+    "confidence": 0.997345
+  },
+  {
+    "text": " right",
+    "startMs": 1570,
+    "endMs": 2160,
+    "timestampMs": 2300,
+    "confidence": 0.992292
+  },
+  {
+    "text": " region",
+    "startMs": 2160,
+    "endMs": 3000,
+    "timestampMs": 2760,
+    "confidence": 0.970834
+  },
+  {
+    "text": " affects",
+    "startMs": 3000,
+    "endMs": 3450,
+    "timestampMs": 3380,
+    "confidence": 0.96216
+  },
+  {
+    "text": " speed",
+    "startMs": 3450,
+    "endMs": 3820,
+    "timestampMs": 3820,
+    "confidence": 0.973447
+  },
+  {
+    "text": ",",
+    "startMs": 3820,
+    "endMs": 4180,
+    "timestampMs": 4260,
+    "confidence": 0.966416
+  },
+  {
+    "text": " cost",
+    "startMs": 4180,
+    "endMs": 5000,
+    "timestampMs": 4520,
+    "confidence": 0.946148
+  },
+  {
+    "text": ",",
+    "startMs": 5000,
+    "endMs": 5110,
+    "timestampMs": 4760,
+    "confidence": 0.587716
+  },
+  {
+    "text": " and",
+    "startMs": 5110,
+    "endMs": 5230,
+    "timestampMs": 5080,
+    "confidence": 0.898765
+  },
+  {
+    "text": " even",
+    "startMs": 5230,
+    "endMs": 5360,
+    "timestampMs": 5340,
+    "confidence": 0.983976
+  },
+  {
+    "text": " legal",
+    "startMs": 5360,
+    "endMs": 5550,
+    "timestampMs": 5640,
+    "confidence": 0.983529
+  },
+  {
+    "text": " compliance",
+    "startMs": 5550,
+    "endMs": 6000,
+    "timestampMs": 6260,
+    "confidence": 0.992793
+  },
+  {
+    "text": " -",
+    "startMs": 6000,
+    "endMs": 6150,
+    "timestampMs": 6800,
+    "confidence": 0.0923137
+  },
+  {
+    "text": " one",
+    "startMs": 6150,
+    "endMs": 6770,
+    "timestampMs": 6920,
+    "confidence": 0.800823
+  },
+  {
+    "text": " of",
+    "startMs": 6770,
+    "endMs": 7100,
+    "timestampMs": 7100,
+    "confidence": 0.99724
+  },
+  {
+    "text": " AWS",
+    "startMs": 7100,
+    "endMs": 7660,
+    "timestampMs": 7620,
+    "confidence": 0.943222
+  },
+  {
+    "text": "'s",
+    "startMs": 7660,
+    "endMs": 8100,
+    "timestampMs": 8040,
+    "confidence": 0.591828
+  },
+  {
+    "text": " first",
+    "startMs": 8100,
+    "endMs": 8360,
+    "timestampMs": 8300,
+    "confidence": 0.753107
+  },
+  {
+    "text": " big",
+    "startMs": 8360,
+    "endMs": 8740,
+    "timestampMs": 8620,
+    "confidence": 0.955939
+  },
+  {
+    "text": " decisions",
+    "startMs": 8740,
+    "endMs": 10000,
+    "timestampMs": 9220,
+    "confidence": 0.994657
+  },
+  {
+    "text": ".",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9680,
+    "confidence": 0.927987
+  }
+]

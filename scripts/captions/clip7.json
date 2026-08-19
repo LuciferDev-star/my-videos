@@ -1,0 +1,184 @@
+[
+  {
+    "text": "They",
+    "startMs": 270,
+    "endMs": 350,
+    "timestampMs": 440,
+    "confidence": 0.859904
+  },
+  {
+    "text": " cache",
+    "startMs": 350,
+    "endMs": 810,
+    "timestampMs": 740,
+    "confidence": 0.981922
+  },
+  {
+    "text": " content",
+    "startMs": 810,
+    "endMs": 1480,
+    "timestampMs": 1280,
+    "confidence": 0.992589
+  },
+  {
+    "text": " and",
+    "startMs": 1480,
+    "endMs": 1620,
+    "timestampMs": 1620,
+    "confidence": 0.939512
+  },
+  {
+    "text": " deliver",
+    "startMs": 1620,
+    "endMs": 2020,
+    "timestampMs": 1920,
+    "confidence": 0.971833
+  },
+  {
+    "text": " it",
+    "startMs": 2020,
+    "endMs": 2230,
+    "timestampMs": 2240,
+    "confidence": 0.989293
+  },
+  {
+    "text": " faster",
+    "startMs": 2230,
+    "endMs": 2760,
+    "timestampMs": 2680,
+    "confidence": 0.955723
+  },
+  {
+    "text": " through",
+    "startMs": 2760,
+    "endMs": 3490,
+    "timestampMs": 4380,
+    "confidence": 0.961764
+  },
+  {
+    "text": " a",
+    "startMs": 3490,
+    "endMs": 4250,
+    "timestampMs": 4540,
+    "confidence": 0.997699
+  },
+  {
+    "text": " service",
+    "startMs": 4250,
+    "endMs": 4320,
+    "timestampMs": 4840,
+    "confidence": 0.996447
+  },
+  {
+    "text": " called",
+    "startMs": 4320,
+    "endMs": 4940,
+    "timestampMs": 5200,
+    "confidence": 0.987984
+  },
+  {
+    "text": " Cloud",
+    "startMs": 4940,
+    "endMs": 5460,
+    "timestampMs": 5520,
+    "confidence": 0.966845
+  },
+  {
+    "text": "Front",
+    "startMs": 5460,
+    "endMs": 5970,
+    "timestampMs": 5840,
+    "confidence": 0.917968
+  },
+  {
+    "text": ".",
+    "startMs": 5970,
+    "endMs": 6000,
+    "timestampMs": 5980,
+    "confidence": 0.938047
+  },
+  {
+    "text": " (",
+    "startMs": 6000,
+    "endMs": 6200,
+    "timestampMs": 8100,
+    "confidence": 0.480123
+  },
+  {
+    "text": "gent",
+    "startMs": 6200,
+    "endMs": 6990,
+    "timestampMs": 8100,
+    "confidence": 0.135356
+  },
+  {
+    "text": "le",
+    "startMs": 6990,
+    "endMs": 7380,
+    "timestampMs": 8100,
+    "confidence": 0.999966
+  },
+  {
+    "text": " music",
+    "startMs": 7380,
+    "endMs": 8370,
+    "timestampMs": 8100,
+    "confidence": 0.849547
+  },
+  {
+    "text": ")",
+    "startMs": 8370,
+    "endMs": 8580,
+    "timestampMs": 8100,
+    "confidence": 0.98775
+  },
+  {
+    "text": " [",
+    "startMs": 8580,
+    "endMs": 8730,
+    "timestampMs": 9960,
+    "confidence": 0.347406
+  },
+  {
+    "text": "M",
+    "startMs": 8730,
+    "endMs": 8880,
+    "timestampMs": 9960,
+    "confidence": 0.296662
+  },
+  {
+    "text": "US",
+    "startMs": 8880,
+    "endMs": 9180,
+    "timestampMs": 9960,
+    "confidence": 0.999815
+  },
+  {
+    "text": "IC",
+    "startMs": 9180,
+    "endMs": 9480,
+    "timestampMs": 9960,
+    "confidence": 0.999373
+  },
+  {
+    "text": " PLAY",
+    "startMs": 9480,
+    "endMs": 10000,
+    "timestampMs": 9960,
+    "confidence": 0.633281
+  },
+  {
+    "text": "ING",
+    "startMs": 10000,
+    "endMs": 10000,
+    "timestampMs": 9960,
+    "confidence": 0.994567
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 10740,
+    "timestampMs": 9960,
+    "confidence": 0.99943
+  }
+]

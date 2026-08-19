@@ -1,0 +1,212 @@
+[
+  {
+    "text": "[",
+    "startMs": 50,
+    "endMs": 290,
+    "timestampMs": 0,
+    "confidence": 0.566518
+  },
+  {
+    "text": "M",
+    "startMs": 290,
+    "endMs": 570,
+    "timestampMs": 3320,
+    "confidence": 0.939687
+  },
+  {
+    "text": "US",
+    "startMs": 570,
+    "endMs": 1140,
+    "timestampMs": 3320,
+    "confidence": 0.999987
+  },
+  {
+    "text": "IC",
+    "startMs": 1140,
+    "endMs": 1710,
+    "timestampMs": 3320,
+    "confidence": 0.999979
+  },
+  {
+    "text": " PLAY",
+    "startMs": 1710,
+    "endMs": 2860,
+    "timestampMs": 3320,
+    "confidence": 0.347188
+  },
+  {
+    "text": "ING",
+    "startMs": 2860,
+    "endMs": 3720,
+    "timestampMs": 3320,
+    "confidence": 0.994283
+  },
+  {
+    "text": "]",
+    "startMs": 3720,
+    "endMs": 4040,
+    "timestampMs": 3320,
+    "confidence": 0.999355
+  },
+  {
+    "text": " This",
+    "startMs": 4040,
+    "endMs": 4300,
+    "timestampMs": 4220,
+    "confidence": 0.995965
+  },
+  {
+    "text": " setup",
+    "startMs": 4300,
+    "endMs": 4610,
+    "timestampMs": 4540,
+    "confidence": 0.913854
+  },
+  {
+    "text": " lets",
+    "startMs": 4610,
+    "endMs": 4860,
+    "timestampMs": 4800,
+    "confidence": 0.995539
+  },
+  {
+    "text": " you",
+    "startMs": 4860,
+    "endMs": 5050,
+    "timestampMs": 4940,
+    "confidence": 0.999744
+  },
+  {
+    "text": " put",
+    "startMs": 5050,
+    "endMs": 5240,
+    "timestampMs": 5120,
+    "confidence": 0.999722
+  },
+  {
+    "text": " your",
+    "startMs": 5240,
+    "endMs": 5490,
+    "timestampMs": 5320,
+    "confidence": 0.999378
+  },
+  {
+    "text": " app",
+    "startMs": 5490,
+    "endMs": 5720,
+    "timestampMs": 5600,
+    "confidence": 0.998418
+  },
+  {
+    "text": " close",
+    "startMs": 5720,
+    "endMs": 6040,
+    "timestampMs": 5960,
+    "confidence": 0.996495
+  },
+  {
+    "text": " to",
+    "startMs": 6040,
+    "endMs": 6190,
+    "timestampMs": 6140,
+    "confidence": 0.97095
+  },
+  {
+    "text": " your",
+    "startMs": 6190,
+    "endMs": 6490,
+    "timestampMs": 6300,
+    "confidence": 0.999539
+  },
+  {
+    "text": " customers",
+    "startMs": 6490,
+    "endMs": 7200,
+    "timestampMs": 6800,
+    "confidence": 0.998715
+  },
+  {
+    "text": ",",
+    "startMs": 7200,
+    "endMs": 7200,
+    "timestampMs": 7060,
+    "confidence": 0.817092
+  },
+  {
+    "text": " wherever",
+    "startMs": 7200,
+    "endMs": 7550,
+    "timestampMs": 7480,
+    "confidence": 0.997965
+  },
+  {
+    "text": " they",
+    "startMs": 7550,
+    "endMs": 7720,
+    "timestampMs": 7720,
+    "confidence": 0.999809
+  },
+  {
+    "text": " are",
+    "startMs": 7720,
+    "endMs": 7850,
+    "timestampMs": 8000,
+    "confidence": 0.999733
+  },
+  {
+    "text": ".",
+    "startMs": 7850,
+    "endMs": 8000,
+    "timestampMs": 8200,
+    "confidence": 0.99875
+  },
+  {
+    "text": " [",
+    "startMs": 8000,
+    "endMs": 8190,
+    "timestampMs": 9860,
+    "confidence": 0.999409
+  },
+  {
+    "text": "M",
+    "startMs": 8190,
+    "endMs": 8380,
+    "timestampMs": 9860,
+    "confidence": 0.999615
+  },
+  {
+    "text": "US",
+    "startMs": 8380,
+    "endMs": 8760,
+    "timestampMs": 9860,
+    "confidence": 0.999975
+  },
+  {
+    "text": "IC",
+    "startMs": 8760,
+    "endMs": 9160,
+    "timestampMs": 9860,
+    "confidence": 0.999989
+  },
+  {
+    "text": " PLAY",
+    "startMs": 9160,
+    "endMs": 9940,
+    "timestampMs": 9860,
+    "confidence": 0.995397
+  },
+  {
+    "text": "ING",
+    "startMs": 9940,
+    "endMs": 10000,
+    "timestampMs": 9860,
+    "confidence": 0.999981
+  },
+  {
+    "text": "]",
+    "startMs": 10000,
+    "endMs": 10760,
+    "timestampMs": 9860,
+    "confidence": 0.999611
+  }
+]
