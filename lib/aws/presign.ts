@@ -1,6 +1,7 @@
 import { GetObjectCommand, PutObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { getS3Client } from "./s3-client";
+import { mimeTypeForFile } from "../video-extensions";
 
 // Bucket stays private throughout - every URL handed to the browser is a
 // short-lived presigned GET/PUT, never a public object. `region` must match
@@ -12,7 +13,11 @@ export async function presignGet(
   key: string,
   expiresInSeconds: number,
 ): Promise<string> {
-  const command = new GetObjectCommand({ Bucket: bucket, Key: key });
+  const command = new GetObjectCommand({
+    Bucket: bucket,
+    Key: key,
+    ResponseContentType: mimeTypeForFile(key),
+  });
   return getSignedUrl(getS3Client(region), command, { expiresIn: expiresInSeconds });
 }
 

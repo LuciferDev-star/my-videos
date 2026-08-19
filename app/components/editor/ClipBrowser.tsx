@@ -29,12 +29,15 @@ function defaultLabelFromKey(key: string): string {
   return fileName.replace(/\.[^.]+$/, "");
 }
 
-// Chrome (and some other browsers) report duration as Infinity on
-// loadedmetadata for certain MP4s until the video is seeked near the end -
-// a well-known quirk, not specific to any file here. Force that seek so we
-// always end up with a real, finite duration before it's used for trims.
+function isUsableDuration(duration: number): boolean {
+  return Number.isFinite(duration) && duration > 0;
+}
+
+// Chrome (and some other browsers) report duration as Infinity or 0 on
+// loadedmetadata for certain MP4s until the video is seeked near the end.
+// Force that seek so we always end up with a real, finite duration.
 function resolveDuration(video: HTMLVideoElement, onResolved: (duration: number) => void) {
-  if (Number.isFinite(video.duration)) {
+  if (isUsableDuration(video.duration)) {
     onResolved(video.duration);
     return;
   }
@@ -42,10 +45,55 @@ function resolveDuration(video: HTMLVideoElement, onResolved: (duration: number)
   const handleTimeUpdate = () => {
     video.removeEventListener("timeupdate", handleTimeUpdate);
     video.currentTime = 0;
-    onResolved(video.duration);
+    if (isUsableDuration(video.duration)) {
+      onResolved(video.duration);
+    }
   };
   video.addEventListener("timeupdate", handleTimeUpdate);
   video.currentTime = 1e101;
+}
+
+function waitForDuration(video: HTMLVideoElement, timeoutMs = 10000): Promise<number> {
+  if (isUsableDuration(video.duration)) {
+    return Promise.resolve(video.duration);
+  }
+
+  return new Promise((resolve) => {
+    let settled = false;
+    const finish = (duration: number) => {
+      if (settled) {
+        return;
+      }
+      settled = true;
+      window.clearTimeout(timer);
+      video.removeEventListener("loadedmetadata", onMeta);
+      video.removeEventListener("durationchange", onMeta);
+      video.removeEventListener("error", onError);
+      resolve(duration);
+    };
+
+    const onMeta = () => {
+      resolveDuration(video, finish);
+    };
+    const onError = () => finish(0);
+    const timer = window.setTimeout(() => {
+      finish(isUsableDuration(video.duration) ? video.duration : 0);
+    }, timeoutMs);
+
+    video.addEventListener("loadedmetadata", onMeta);
+    video.addEventListener("durationchange", onMeta);
+    video.addEventListener("error", onError);
+    resolveDuration(video, finish);
+    void video.play().then(
+      () => {
+        video.pause();
+        video.currentTime = 0;
+      },
+      () => {
+        // Autoplay may be blocked; metadata listeners above still run.
+      },
+    );
+  });
 }
 
 export function ClipBrowser({
@@ -61,6 +109,8 @@ export function ClipBrowser({
 }) {
   const [labels, setLabels] = useState<Record<string, string>>({});
   const [durations, setDurations] = useState<Record<string, number>>({});
+  const [loadErrors, setLoadErrors] = useState<Record<string, string>>({});
+  const [addingIds, setAddingIds] = useState<Set<string>>(new Set());
   const [transcribingIds, setTranscribingIds] = useState<Set<string>>(new Set());
 
   if (error) {
@@ -83,9 +133,10 @@ export function ClipBrowser({
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {clips.map((clip) => {
         const alreadyAdded = selectedIds.includes(clip.key);
+        const isAdding = addingIds.has(clip.key);
         const label = labels[clip.key] ?? defaultLabelFromKey(clip.key);
         const duration = durations[clip.key];
-        const canAdd = !alreadyAdded && Boolean(duration);
+        const loadError = loadErrors[clip.key];
 
         return (
           <div
@@ -95,12 +146,25 @@ export function ClipBrowser({
             <video
               src={clip.previewUrl}
               controls
-              preload="metadata"
+              preload="auto"
+              playsInline
               className="w-full rounded"
               onLoadedMetadata={(event) => {
-                resolveDuration(event.currentTarget, (duration) => {
-                  setDurations((prev) => ({ ...prev, [clip.key]: duration }));
+                resolveDuration(event.currentTarget, (nextDuration) => {
+                  setDurations((prev) => ({ ...prev, [clip.key]: nextDuration }));
+                  setLoadErrors((prev) => {
+                    const next = { ...prev };
+                    delete next[clip.key];
+                    return next;
+                  });
                 });
+              }}
+              onError={() => {
+                setLoadErrors((prev) => ({
+                  ...prev,
+                  [clip.key]:
+                    "This clip did not load. Allow GET (and HEAD) in the S3 bucket CORS rules for this site, and confirm the IAM user has s3:GetObject.",
+                }));
               }}
             />
             <input
@@ -114,18 +178,49 @@ export function ClipBrowser({
             />
             <button
               type="button"
-              disabled={!canAdd}
-              onClick={() => {
+              disabled={alreadyAdded || isAdding}
+              onClick={async (event) => {
+                setAddingIds((prev) => new Set(prev).add(clip.key));
+                const card = event.currentTarget.closest("div");
+                const video = card?.querySelector("video");
+                const knownDuration =
+                  duration && isUsableDuration(duration)
+                    ? duration
+                    : video
+                      ? await waitForDuration(video)
+                      : 0;
+
+                if (!isUsableDuration(knownDuration)) {
+                  setAddingIds((prev) => {
+                    const next = new Set(prev);
+                    next.delete(clip.key);
+                    return next;
+                  });
+                  setLoadErrors((prev) => ({
+                    ...prev,
+                    [clip.key]:
+                      "Could not read this clip's duration. Play the preview once, then try Add to timeline again.",
+                  }));
+                  return;
+                }
+
+                setDurations((prev) => ({ ...prev, [clip.key]: knownDuration }));
+
                 const editorClip: EditorClip = {
                   id: clip.key,
                   src: clip.previewUrl,
                   label,
-                  sourceDurationSeconds: duration,
+                  sourceDurationSeconds: knownDuration,
                   trimBeforeSeconds: 0,
-                  trimAfterSeconds: duration ?? 0,
+                  trimAfterSeconds: knownDuration,
                   transitionAfter: "fade",
                 };
                 dispatch({ type: "ADD_CLIP", clip: editorClip });
+                setAddingIds((prev) => {
+                  const next = new Set(prev);
+                  next.delete(clip.key);
+                  return next;
+                });
 
                 setTranscribingIds((prev) => new Set(prev).add(clip.key));
                 transcribeAndDispatch(editorClip, dispatch).finally(() => {
@@ -138,8 +233,9 @@ export function ClipBrowser({
               }}
               className="w-full rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white disabled:bg-neutral-700 disabled:text-neutral-500"
             >
-              {alreadyAdded ? "Added" : "Add to timeline"}
+              {alreadyAdded ? "Added" : isAdding ? "Adding..." : "Add to timeline"}
             </button>
+            {loadError && <p className="text-xs text-red-400">{loadError}</p>}
             {transcribingIds.has(clip.key) && (
               <p className="text-xs text-neutral-500">Transcribing captions...</p>
             )}
