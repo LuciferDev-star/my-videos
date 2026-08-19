@@ -56,12 +56,25 @@ export function RenderPanel({
 
         if (data.fatalErrorEncountered) {
           sessionStorage.removeItem(SESSION_STORAGE_KEY);
-          setErrorMessage("Render failed. Check the AWS Lambda logs for details.");
+          const detail =
+            Array.isArray(data.errors) && data.errors[0]?.message
+              ? data.errors[0].message
+              : "Render failed.";
+          setErrorMessage(detail);
           setActiveRender(null);
           return;
         }
 
         if (data.done && data.outKey) {
+          if (activeRender.bucketName === "local") {
+            sessionStorage.removeItem(SESSION_STORAGE_KEY);
+            setDownloadUrl(
+              `/api/render/download?mode=local&file=${encodeURIComponent(data.outKey)}`,
+            );
+            setActiveRender(null);
+            return;
+          }
+
           const downloadRes = await fetch(
             `/api/render/download?bucketName=${encodeURIComponent(activeRender.bucketName)}&outKey=${encodeURIComponent(data.outKey)}`,
           );
@@ -113,10 +126,7 @@ export function RenderPanel({
 
       const data = await res.json();
 
-      if (data.mode === "local") {
-        // Local mode (RENDER_TARGET unset or "local") renders synchronously
-        // on this server - by the time this response arrives, out/*.mp4
-        // already exists, so there's nothing to poll.
+      if (data.mode === "local" && data.downloadUrl) {
         setDownloadUrl(data.downloadUrl);
         return;
       }

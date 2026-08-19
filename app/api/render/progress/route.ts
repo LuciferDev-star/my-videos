@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { checkRenderProgress } from "../../../../lib/aws/lambda-render";
+import { getLocalRenderJob } from "../../../../lib/render/local-jobs";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -11,6 +12,21 @@ export async function GET(request: Request) {
       { error: "renderId and bucketName query params are required." },
       { status: 400 },
     );
+  }
+
+  if (bucketName === "local") {
+    const job = getLocalRenderJob(renderId);
+    if (!job) {
+      return NextResponse.json({ error: "Render job not found." }, { status: 404 });
+    }
+
+    return NextResponse.json({
+      done: job.status === "done",
+      overallProgress: job.overallProgress,
+      outKey: job.fileName ?? null,
+      errors: job.error ? [{ message: job.error }] : [],
+      fatalErrorEncountered: job.status === "error",
+    });
   }
 
   try {
