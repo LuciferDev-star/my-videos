@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { presignPut } from "../../../../lib/aws/presign";
 import { hasVideoExtension, sanitizeUploadFileName } from "../../../../lib/video-extensions";
+import { isS3SourceEnabled } from "../../../../lib/source-storage";
 
 // 15 minutes - enough time for a large video to start uploading directly to
 // S3 from the browser (the upload itself doesn't route through this server).
@@ -27,13 +28,15 @@ export async function POST(request: Request) {
 
   // Timestamp-prefixed key: avoids silently overwriting an existing object
   // that happens to share the same original filename.
-  const key = `${prefix}${Date.now()}-${sanitizeUploadFileName(fileName)}`;
+  const key = isS3SourceEnabled()
+    ? `${prefix}${Date.now()}-${sanitizeUploadFileName(fileName)}`
+    : `${Date.now()}-${sanitizeUploadFileName(fileName)}`;
 
   // No S3 bucket configured yet - fall back to local disk storage (see
   // lib/local-clips.ts) so upload/browse/render can still be tested end to
   // end. The client always PUTs the file to `uploadUrl` the same way
   // regardless of mode, so nothing else needs to branch on this.
-  if (!bucket || !region) {
+  if (!isS3SourceEnabled() || !bucket || !region) {
     return NextResponse.json({
       mode: "local",
       uploadUrl: `/api/local-clips/upload?key=${encodeURIComponent(key)}`,

@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react";
 
+export type ClipStorage = "local" | "s3";
+
 export type S3Clip = {
   key: string;
   size: number;
@@ -13,6 +15,7 @@ export type S3Clip = {
 // refresh (UploadDropzone calling refetch()) share one source of truth.
 export function useS3Clips() {
   const [clips, setClips] = useState<S3Clip[] | null>(null);
+  const [storage, setStorage] = useState<ClipStorage>("local");
   const [error, setError] = useState<string | null>(null);
 
   const refetch = useCallback(() => {
@@ -20,11 +23,14 @@ export function useS3Clips() {
     fetch("/api/s3/clips")
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to load clips from the bucket.");
+          throw new Error("Failed to load uploaded clips.");
         }
         return res.json();
       })
-      .then((data) => setClips(data.clips))
+      .then((data) => {
+        setClips(data.clips);
+        setStorage(data.storage === "s3" ? "s3" : "local");
+      })
       .catch((err: Error) => setError(err.message));
   }, []);
 
@@ -35,5 +41,5 @@ export function useS3Clips() {
     refetch();
   }, [refetch]);
 
-  return { clips, error, refetch };
+  return { clips, storage, error, refetch };
 }

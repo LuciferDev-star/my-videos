@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { saveLocalClip } from "../../../../lib/local-clips";
+import { isSafeUploadKey, saveLocalClip } from "../../../../lib/local-clips";
 
 // Counterpart to a presigned S3 PUT, but for the local-disk fallback (see
 // lib/local-clips.ts): the client PUTs the raw file body here the same way
@@ -9,7 +9,7 @@ export async function PUT(request: Request) {
   const { searchParams } = new URL(request.url);
   const key = searchParams.get("key");
 
-  if (!key || key.includes("/") || key.includes("\\") || key.includes("..")) {
+  if (!key || !isSafeUploadKey(key)) {
     return NextResponse.json({ error: "Invalid key." }, { status: 400 });
   }
 

@@ -4,6 +4,7 @@ import { getS3Client } from "../../../../lib/aws/s3-client";
 import { presignGet } from "../../../../lib/aws/presign";
 import { hasVideoExtension } from "../../../../lib/video-extensions";
 import { listLocalClips } from "../../../../lib/local-clips";
+import { isS3SourceEnabled } from "../../../../lib/source-storage";
 
 const PREVIEW_URL_EXPIRY_SECONDS = 60 * 60; // 1 hour - browsing-time only,
 // re-presigned again at render time (see /api/render/start).
@@ -16,8 +17,8 @@ export async function GET() {
   // No S3 bucket configured yet - fall back to whatever's been uploaded to
   // local disk storage (see lib/local-clips.ts) instead of erroring, so
   // this list stays in sync with app/api/s3/upload-url's own fallback.
-  if (!bucket || !region) {
-    return NextResponse.json({ clips: listLocalClips() });
+  if (!isS3SourceEnabled() || !bucket || !region) {
+    return NextResponse.json({ clips: listLocalClips(), storage: "local" });
   }
 
   try {
@@ -43,7 +44,7 @@ export async function GET() {
       })),
     );
 
-    return NextResponse.json({ clips });
+    return NextResponse.json({ clips, storage: "s3" });
   } catch (error) {
     console.error("Failed to list S3 clips", error);
     return NextResponse.json({ error: "Failed to list clips from S3." }, { status: 502 });

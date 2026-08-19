@@ -5,6 +5,7 @@ import { presignGet } from "../../../../lib/aws/presign";
 import { startRender } from "../../../../lib/aws/lambda-render";
 import { renderLocally } from "../../../../lib/render/local-render";
 import { isLocalUploadSrc, toLocalRenderSrc } from "../../../../lib/local-clips";
+import { isS3SourceEnabled } from "../../../../lib/source-storage";
 
 // Long enough to outlast a slow Lambda render, well past the ~1hr
 // browsing-time URLs used while the editor is still arranging clips.
@@ -20,7 +21,7 @@ async function refreshS3ClipUrls(props: ClipsMontageProps): Promise<ClipsMontage
 
   // No bucket configured (e.g. testing locally with only the built-in
   // default clips) - nothing to refresh, leave clip.src as-is.
-  if (!bucket || !region) {
+  if (!isS3SourceEnabled() || !bucket || !region) {
     return props;
   }
 

@@ -118,13 +118,13 @@ export function ClipBrowser({
   }
 
   if (!clips) {
-    return <p className="text-sm text-neutral-400">Loading clips from S3...</p>;
+    return <p className="text-sm text-neutral-400">Loading clips...</p>;
   }
 
   if (clips.length === 0) {
     return (
       <p className="text-sm text-neutral-400">
-        No video clips in the bucket yet - upload some above to get started.
+        No video clips yet - upload some above to get started.
       </p>
     );
   }
@@ -163,7 +163,7 @@ export function ClipBrowser({
                 setLoadErrors((prev) => ({
                   ...prev,
                   [clip.key]:
-                    "This clip did not load. Allow GET (and HEAD) in the S3 bucket CORS rules for this site, and confirm the IAM user has s3:GetObject.",
+                    "This clip did not load. Re-upload the file, or if you are using S3 later, allow GET/HEAD in the bucket CORS rules.",
                 }));
               }}
             />

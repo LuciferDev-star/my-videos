@@ -10,12 +10,8 @@ import { hasVideoExtension } from "./video-extensions";
 // maintain in production.
 export const LOCAL_UPLOADS_DIR = path.join(process.cwd(), "public", "uploads");
 
-// Served by Next's own static file handling (anything under public/ is
-// served at the matching root path), so this doubles as both the browser
-// preview URL and, after prefixing with /public at local-render time (see
-// app/api/render/start/route.ts), the path the local Remotion render
-// bundle serves it at too.
-const PUBLIC_URL_PREFIX = "/uploads/";
+const FILE_ROUTE = "/api/local-clips/file";
+const LEGACY_PUBLIC_URL_PREFIX = "/uploads/";
 
 export type LocalClip = {
   key: string;
@@ -23,6 +19,14 @@ export type LocalClip = {
   lastModified: string | null;
   previewUrl: string;
 };
+
+export function isSafeUploadKey(key: string): boolean {
+  return Boolean(key) && !key.includes("/") && !key.includes("\\") && !key.includes("..");
+}
+
+export function localPreviewUrl(key: string): string {
+  return `${FILE_ROUTE}?key=${encodeURIComponent(key)}`;
+}
 
 function ensureUploadsDir(): void {
   fs.mkdirSync(LOCAL_UPLOADS_DIR, { recursive: true });
@@ -33,14 +37,14 @@ export function listLocalClips(): LocalClip[] {
 
   return fs
     .readdirSync(LOCAL_UPLOADS_DIR)
-    .filter((fileName) => hasVideoExtension(fileName))
+    .filter((fileName) => hasVideoExtension(fileName) && isSafeUploadKey(fileName))
     .map((fileName) => {
       const stat = fs.statSync(path.join(LOCAL_UPLOADS_DIR, fileName));
       return {
         key: fileName,
         size: stat.size,
         lastModified: stat.mtime.toISOString(),
-        previewUrl: `${PUBLIC_URL_PREFIX}${fileName}`,
+        previewUrl: localPreviewUrl(fileName),
       };
     });
 }
@@ -55,26 +59,41 @@ export function saveLocalClip(key: string, data: Buffer): LocalClip {
     key,
     size: stat.size,
     lastModified: stat.mtime.toISOString(),
-    previewUrl: `${PUBLIC_URL_PREFIX}${key}`,
+    previewUrl: localPreviewUrl(key),
   };
 }
 
-// A clip whose src is one of these local-upload URLs (as opposed to an
-// https:// S3 URL) needs a path rewrite before being handed to the local
-// render pipeline - see prepareClipsForLocalRender in
-// app/api/render/start/route.ts.
 export function isLocalUploadSrc(src: string): boolean {
-  return src.startsWith(PUBLIC_URL_PREFIX);
+  return src.includes(FILE_ROUTE) || src.startsWith(LEGACY_PUBLIC_URL_PREFIX);
 }
 
+export function localClipKeyFromSrc(src: string): string {
+  if (src.startsWith(LEGACY_PUBLIC_URL_PREFIX)) {
+    return decodeURIComponent(src.slice(LEGACY_PUBLIC_URL_PREFIX.length));
+  }
+
+  try {
+    const url = new URL(src, "http://localhost");
+    const key = url.searchParams.get("key");
+    if (key) {
+      return key;
+    }
+  } catch {
+    // Fall through to basename.
+  }
+
+  return path.basename(src);
+}
+
+// Remotion's local renderer serves the project's public/ folder at /public.
 export function toLocalRenderSrc(src: string): string {
-  return `/public${src}`;
+  return `/public/uploads/${localClipKeyFromSrc(src)}`;
 }
 
-// Reads a local-upload clip's bytes straight off disk, for server-side work
-// that needs the actual file content rather than a URL to hand to the
-// browser - see app/api/ai/transcribe-clip/route.ts.
 export function readLocalClip(src: string): Buffer {
-  const fileName = src.slice(PUBLIC_URL_PREFIX.length);
+  const fileName = localClipKeyFromSrc(src);
+  if (!isSafeUploadKey(fileName)) {
+    throw new Error("Invalid local clip key.");
+  }
   return fs.readFileSync(path.join(LOCAL_UPLOADS_DIR, fileName));
 }

@@ -13,7 +13,7 @@ import { RenderPanel } from "../components/editor/RenderPanel";
 
 export default function EditorPage() {
   const { state, dispatch, renderProps } = useEditorState();
-  const { clips, error, refetch } = useS3Clips();
+  const { clips, storage, error, refetch } = useS3Clips();
   const [selectedClipId, setSelectedClipId] = useState<string | null>(null);
 
   const selectedIndex = state.clips.findIndex(
@@ -26,9 +26,8 @@ export default function EditorPage() {
       <header>
         <h1 className="text-xl font-semibold">Video Editor</h1>
         <p className="text-sm text-neutral-400">
-          Upload or pick clips from the bucket, arrange them into a
-          timeline, edit with the prompt box or the controls below it, then
-          generate the final video.
+          Upload clips, arrange them into a timeline, edit with the prompt
+          box or the controls below it, then generate the final video.
         </p>
       </header>
 
@@ -41,7 +40,7 @@ export default function EditorPage() {
 
       <section className="space-y-3">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-400">
-          2. Clips in the bucket
+          2. {storage === "s3" ? "Clips in the bucket" : "Uploaded clips"}
         </h2>
         <ClipBrowser
           clips={clips}

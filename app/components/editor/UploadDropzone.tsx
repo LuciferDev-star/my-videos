@@ -132,7 +132,7 @@ export function UploadDropzone({ onUploaded }: { onUploaded: () => void }) {
             : "border-neutral-700 text-neutral-400"
         }`}
       >
-        Drag video files here, or click to choose files to upload to the bucket.
+        Drag video files here, or click to choose files to upload.
         <input
           ref={inputRef}
           type="file"
